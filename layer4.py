@@ -27,13 +27,11 @@ def run():
 					s.send(data2)
 					s.connect((ip,port))
 					for z in range(3):
-						s.send(data2)
 						s.send(data)
 						s.connect((ip,port))
 						s.sendto(data2, ad)
 						for z in range(2):
 							s.send(data2)
-							s.send(data)
 							s.connect((ip,port))
 							s.sendto(data, ad)
 						for z in range(1):
